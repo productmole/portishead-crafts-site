@@ -1,20 +1,30 @@
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const items = [
   { icon: "🏅", text: "City & Guilds Qualified" },
   { icon: "📍", text: "Based in Portishead" },
   { icon: "⭐", text: "Free Quotes Always Provided" },
 ];
 
-const TrustBar = () => (
-  <section className="bg-secondary py-6">
-    <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-      {items.map((item) => (
-        <div key={item.text} className="flex items-center gap-2 text-foreground">
-          <span className="text-2xl" role="img" aria-hidden="true">{item.icon}</span>
-          <span className="text-sm font-medium font-body">{item.text}</span>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+const TrustBar = () => {
+  const { ref, visible } = useScrollReveal(0.3);
+
+  return (
+    <section ref={ref} className="bg-secondary py-6">
+      <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+        {items.map((item, i) => (
+          <div
+            key={item.text}
+            className={`flex items-center gap-2 text-foreground transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            style={{ transitionDelay: visible ? `${i * 150}ms` : "0ms" }}
+          >
+            <span className="text-2xl" role="img" aria-hidden="true">{item.icon}</span>
+            <span className="text-sm font-medium font-body">{item.text}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default TrustBar;

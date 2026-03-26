@@ -1,8 +1,10 @@
 import { useState, type FormEvent } from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Send } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const { ref, visible } = useScrollReveal();
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -11,10 +13,10 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 lg:py-28 bg-secondary/50">
-      <div className="container mx-auto px-4">
+      <div ref={ref} className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left */}
-          <div>
+          <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Get in Touch
             </h2>
@@ -24,25 +26,32 @@ const Contact = () => {
             <div className="space-y-4">
               <a
                 href="tel:07722959708"
-                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+                className="group flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <Phone className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
                 <span className="font-body font-medium">07722 959708</span>
               </a>
               <a
                 href="mailto:rcsportishead@gmail.com"
-                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+                className="group flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <Mail className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
                 <span className="font-body font-medium">rcsportishead@gmail.com</span>
               </a>
             </div>
           </div>
 
           {/* Right — form */}
-          <div className="bg-card rounded-lg p-8 shadow-sm border border-border">
+          <div className={`bg-card rounded-lg p-8 shadow-sm border border-border transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {submitted ? (
               <div className="text-center py-12">
+                <div className="w-16 h-16 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
+                  <Send className="w-7 h-7 text-primary" />
+                </div>
                 <p className="text-xl font-heading font-semibold text-foreground mb-2">
                   Thanks!
                 </p>
@@ -59,7 +68,7 @@ const Contact = () => {
                       id="firstName"
                       type="text"
                       required
-                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                     />
                   </div>
                   <div>
@@ -70,7 +79,7 @@ const Contact = () => {
                       id="lastName"
                       type="text"
                       required
-                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                     />
                   </div>
                 </div>
@@ -82,7 +91,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     required
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   />
                 </div>
                 <div>
@@ -92,7 +101,7 @@ const Contact = () => {
                   <input
                     id="phone"
                     type="tel"
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   />
                 </div>
                 <div>
@@ -103,12 +112,12 @@ const Contact = () => {
                     id="message"
                     rows={4}
                     required
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none transition-shadow"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+                  className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
                 >
                   Send Message
                 </button>
