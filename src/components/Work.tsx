@@ -5,13 +5,14 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 const filters = ["All", "Fitted Kitchens", "Internal Fittings", "Bespoke Furniture", "Exteriors"];
 
 // TODO: Replace these Unsplash placeholders with real project photos
+// TODO: Replace these Unsplash placeholders with real project photos
 const projects = [
   { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80", cat: "Fitted Kitchens", alt: "Modern fitted kitchen with wooden cabinets" },
-  { src: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80", cat: "Fitted Kitchens", alt: "Contemporary kitchen installation" },
-  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80", cat: "Internal Fittings", alt: "Internal timber door fitting" },
-  { src: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80", cat: "Bespoke Furniture", alt: "Handcrafted bespoke wooden furniture" },
+  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", cat: "Fitted Kitchens", alt: "Contemporary kitchen installation" },
+  { src: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80", cat: "Internal Fittings", alt: "Internal timber door and trim fitting" },
+  { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80", cat: "Bespoke Furniture", alt: "Handcrafted bespoke wooden furniture" },
   { src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80", cat: "Internal Fittings", alt: "Built-in wardrobe with shelving" },
-  { src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80", cat: "Exteriors", alt: "Timber decking and outdoor structure" },
+  { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80", cat: "Exteriors", alt: "Timber decking and outdoor structure" },
   { src: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80", cat: "Bespoke Furniture", alt: "Custom built-in shelving unit" },
   { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", cat: "Exteriors", alt: "Glass balcony and exterior carpentry" },
 ];
