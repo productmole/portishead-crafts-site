@@ -10,7 +10,7 @@ const Footer = () => (
             <a
               key={l}
               href={`#${l.toLowerCase()}`}
-              className="text-sm text-footer-foreground/70 hover:text-footer-foreground transition-colors font-body"
+              className="text-sm text-footer-foreground/70 hover:text-primary transition-colors duration-300 font-body"
             >
               {l}
             </a>
