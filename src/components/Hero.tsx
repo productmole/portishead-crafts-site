@@ -26,7 +26,7 @@ const Hero = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          Bespoke Carpentry, Crafted in Portishead
+          Bespoke Carpentry: Crafted in Portishead
         </h1>
         <p
           className={`text-lg sm:text-xl text-white/85 font-body mb-10 max-w-2xl mx-auto transition-all duration-1000 delay-200 ${
