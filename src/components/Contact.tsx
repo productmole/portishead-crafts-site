@@ -106,9 +106,11 @@ const Contact = () => {
                     </label>
                     <input
                       id="firstName"
+                      name="firstName"
                       type="text"
                       required
-                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+                      disabled={status === "loading"}
+                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow disabled:opacity-50"
                     />
                   </div>
                   <div>
@@ -117,9 +119,11 @@ const Contact = () => {
                     </label>
                     <input
                       id="lastName"
+                      name="lastName"
                       type="text"
                       required
-                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+                      disabled={status === "loading"}
+                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -129,9 +133,11 @@ const Contact = () => {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     required
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+                    disabled={status === "loading"}
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow disabled:opacity-50"
                   />
                 </div>
                 <div>
@@ -140,8 +146,10 @@ const Contact = () => {
                   </label>
                   <input
                     id="phone"
+                    name="phone"
                     type="tel"
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+                    disabled={status === "loading"}
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow disabled:opacity-50"
                   />
                 </div>
                 <div>
@@ -150,16 +158,26 @@ const Contact = () => {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     required
-                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none transition-shadow"
+                    disabled={status === "loading"}
+                    className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none transition-shadow disabled:opacity-50"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
+                  disabled={status === "loading"}
+                  className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 disabled:opacity-70 flex items-center justify-center gap-2"
                 >
-                  Send Message
+                  {status === "loading" ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Sending…
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
               </form>
             )}
