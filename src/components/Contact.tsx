@@ -2,9 +2,7 @@ import { useState, type FormEvent } from "react";
 import { Phone, Mail, Send, Loader2 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-// ── Formspree endpoint — replace the ID below with your real Formspree form ID ──
-// TODO: Replace REPLACE_WITH_FORMSPREE_ID with your actual Formspree form ID
-const FORMSPREE_URL = "https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID";
+const FORMSPREE_URL = "https://formspree.io/f/mjgpgbbk";
 
 const Contact = () => {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
