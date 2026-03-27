@@ -34,9 +34,6 @@ const Testimonials = () => {
   const { ref, visible } = useScrollReveal();
   const [current, setCurrent] = useState(0);
 
-  // If no testimonials, render nothing
-  if (testimonials.length === 0) return null;
-
   const count = testimonials.length;
 
   const goNext = useCallback(() => setCurrent((c) => (c + 1) % count), [count]);
@@ -44,9 +41,13 @@ const Testimonials = () => {
 
   // Auto-advance every 6 seconds
   useEffect(() => {
+    if (count === 0) return;
     const timer = setInterval(goNext, 6000);
     return () => clearInterval(timer);
-  }, [goNext]);
+  }, [goNext, count]);
+
+  // If no testimonials, render nothing
+  if (testimonials.length === 0) return null;
 
   return (
     <section id="testimonials" className="py-20 lg:py-28 bg-background">
