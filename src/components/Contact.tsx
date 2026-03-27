@@ -1,14 +1,35 @@
 import { useState, type FormEvent } from "react";
-import { Phone, Mail, Send } from "lucide-react";
+import { Phone, Mail, Send, Loader2 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
+// ── Formspree endpoint — replace the ID below with your real Formspree form ID ──
+// TODO: Replace REPLACE_WITH_FORMSPREE_ID with your actual Formspree form ID
+const FORMSPREE_URL = "https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID";
+
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const { ref, visible } = useScrollReveal();
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("loading");
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -47,7 +68,7 @@ const Contact = () => {
 
           {/* Right — form */}
           <div className={`bg-card rounded-lg p-8 shadow-sm border border-border transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            {submitted ? (
+            {status === "success" ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
                   <Send className="w-7 h-7 text-primary" />
@@ -56,6 +77,25 @@ const Contact = () => {
                   Thanks!
                 </p>
                 <p className="text-muted-foreground font-body">Andy will be in touch soon.</p>
+              </div>
+            ) : status === "error" ? (
+              <div className="text-center py-12">
+                <p className="text-xl font-heading font-semibold text-foreground mb-2">
+                  Something went wrong
+                </p>
+                <p className="text-muted-foreground font-body">
+                  Please email{" "}
+                  <a href="mailto:rcsportishead@gmail.com" className="text-primary underline">
+                    rcsportishead@gmail.com
+                  </a>{" "}
+                  directly.
+                </p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="mt-4 text-sm text-primary hover:underline font-body"
+                >
+                  Try again
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
