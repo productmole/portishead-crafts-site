@@ -4,20 +4,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const filters = ["All", "Fitted Kitchens", "Internal Fittings", "Bespoke Furniture", "Exteriors"];
 
-// TODO: Replace these Unsplash placeholders with real project photos
-// TODO: Replace these Unsplash placeholders with real project photos
-// TODO: Replace these Unsplash placeholders with real project photos
-// Each project can include an optional `caption` field shown below the image.
-const projects: { src: string; cat: string; alt: string; caption?: string }[] = [
-  { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80", cat: "Fitted Kitchens", alt: "Modern fitted kitchen with wooden cabinets", caption: "Full kitchen refit — Portishead" },
-  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", cat: "Fitted Kitchens", alt: "Contemporary kitchen installation" },
-  { src: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80", cat: "Internal Fittings", alt: "Internal timber door and trim fitting", caption: "Oak door & architrave fitting" },
-  { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80", cat: "Bespoke Furniture", alt: "Handcrafted bespoke wooden furniture" },
-  { src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80", cat: "Internal Fittings", alt: "Built-in wardrobe with shelving", caption: "Bespoke built-in wardrobe" },
-  { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80", cat: "Exteriors", alt: "Timber decking and outdoor structure" },
-  { src: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80", cat: "Bespoke Furniture", alt: "Custom built-in shelving unit", caption: "Custom alcove shelving" },
-  { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", cat: "Exteriors", alt: "Glass balcony and exterior carpentry" },
-];
+const projects: { src: string; cat: string; alt: string; caption?: string }[] = [];
 
 const Work = () => {
   const [active, setActive] = useState("All");

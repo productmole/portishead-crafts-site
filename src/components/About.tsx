@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const trustItems = [
+  "15 Years Established",
   "City & Guilds Qualified",
   "Based in Portishead, North Somerset",
   "Residential & Commercial Projects",
@@ -19,10 +20,10 @@ const About = () => {
           {/* Left */}
           <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Andy Richmond — Craftsman, Portishead
+              Andy Richmond — Carpenter, Portishead
             </h2>
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              We're a City &amp; Guilds qualified carpentry business based in Portishead, working with homeowners and businesses throughout North Somerset and beyond.
+              Richmond Carpentry is a City &amp; Guilds qualified carpentry business based in Portishead, with 15 years of experience serving homeowners and businesses throughout North Somerset and beyond.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed mb-8">
               Every job — from a single door to a full kitchen — gets the same attention to detail and the same trusted team. Get in touch for a free, no-obligation quote.

@@ -26,15 +26,14 @@ const Hero = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          Bespoke Carpentry: Crafted in Portishead
+          Bespoke Carpentry in Portishead & North Somerset
         </h1>
         <p
           className={`text-lg sm:text-xl text-white/85 font-body mb-10 max-w-2xl mx-auto transition-all duration-1000 delay-200 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          From fitted kitchens to bespoke furniture — quality you can see and touch.
-          Serving Portishead and the wider South West.
+          Fitted kitchens, bespoke wardrobes, alcove units, doors, flooring and more. City &amp; Guilds qualified. 15 years established.
         </p>
         <div
           className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-1000 delay-500 ${

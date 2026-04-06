@@ -3,32 +3,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // ── Testimonial data — edit this array to add / remove reviews ──
-const testimonials: { review: string; name: string; date: string }[] = [
-  {
-    review:
-      "Andy fitted our kitchen from start to finish and the quality is outstanding. He managed the whole project, including the plumber and electrician, and kept everything on schedule. Couldn't recommend him more highly.",
-    name: "Sarah & Tom P.",
-    date: "March 2025",
-  },
-  {
-    review:
-      "We had bespoke shelving and a window seat built for our living room. The craftsmanship is beautiful — it looks like it's always been part of the house.",
-    name: "James L.",
-    date: "January 2025",
-  },
-  {
-    review:
-      "Prompt, tidy, and genuinely skilled. Andy replaced all the internal doors and skirting in our Victorian terrace. Perfect finish every time.",
-    name: "Claire M.",
-    date: "November 2024",
-  },
-  {
-    review:
-      "Had a glass balcony and decking installed. The whole team was professional and the result is stunning — we practically live outside now.",
-    name: "David & Karen R.",
-    date: "September 2024",
-  },
-];
+const testimonials: { review: string; name: string; date: string }[] = [];
 
 const Testimonials = () => {
   const { ref, visible } = useScrollReveal();

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/richmond-carpentry-light.svg";
 
 const navLinks = [
   { label: "Work", href: "#work" },
@@ -23,8 +24,8 @@ const Navbar = () => {
       scrolled ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
     }`}>
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
-        <a href="#" className={`font-heading text-xl font-bold tracking-tight transition-colors duration-300 ${scrolled ? "text-foreground" : "text-white"}`}>
-          Richmond Carpentry
+        <a href="#" className="inline-flex items-center">
+          <img src={logo} alt="Richmond Carpentry" className="max-h-12 w-auto" />
         </a>
 
         {/* Desktop */}
