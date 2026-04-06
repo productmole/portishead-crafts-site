@@ -4,33 +4,33 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const services = [
   {
     icon: ChefHat,
-    title: "Kitchen Planning & Fitting",
-    desc: "Full kitchen installation with project management, including a trusted team of plasterers, plumbers, and electricians.",
-  },
-  {
-    icon: Armchair,
-    title: "Bespoke Furniture",
-    desc: "Custom-built pieces designed and crafted to fit your space perfectly.",
-  },
-  {
-    icon: DoorOpen,
-    title: "Doors & Skirting",
-    desc: "Internal door fitting and skirting board installation, clean and precise.",
+    title: "Fitted Kitchens",
+    desc: "Complete fitted kitchen installations with careful finishing and practical layouts for everyday use.",
   },
   {
     icon: LayoutGrid,
-    title: "Wardrobes & Storage",
-    desc: "Built-in wardrobes and storage solutions tailored to your room.",
+    title: "Bespoke Wardrobes",
+    desc: "Built-to-measure wardrobes designed around your room, including awkward spaces and alcoves.",
+  },
+  {
+    icon: Armchair,
+    title: "Alcove Units",
+    desc: "Custom alcove shelving and cabinets that make the most of unused space and match your interior.",
+  },
+  {
+    icon: DoorOpen,
+    title: "Doors",
+    desc: "Internal door fitting and replacement with accurate hanging, clean lines, and reliable operation.",
   },
   {
     icon: Monitor,
-    title: "Office Workstations",
-    desc: "Practical, well-crafted workspaces for home and commercial offices.",
+    title: "Flooring",
+    desc: "Professional timber and patterned flooring installation with attention to detail across the full run.",
   },
   {
     icon: Fence,
-    title: "Glass Balconies & Exteriors",
-    desc: "Outdoor structures, decking, pergolas, and glass balcony installations.",
+    title: "Skirtings",
+    desc: "Neat skirting installation and finishing to complete rooms and tie new joinery together.",
   },
 ];
 

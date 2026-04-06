@@ -1,10 +1,53 @@
 import { useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import img_1401 from "../assets/gallery/IMG_1401.jpeg";
+import img_0812 from "../assets/gallery/IMG_0812.jpeg";
+import img_3116 from "../assets/gallery/IMG_3116.jpeg";
+import img_3962 from "../assets/gallery/IMG_3962.jpeg";
+import img_4059 from "../assets/gallery/IMG_4059.jpeg";
+import img_3109 from "../assets/gallery/IMG_3109.jpeg";
+import img_1628 from "../assets/gallery/IMG_1628.jpeg";
+import img_3932 from "../assets/gallery/IMG_3932.jpeg";
+import img_0769 from "../assets/gallery/IMG_0769.jpeg";
+import img_0775 from "../assets/gallery/IMG_0775.jpeg";
+import img_0778 from "../assets/gallery/IMG_0778.jpeg";
+import img_3464 from "../assets/gallery/IMG_3464.jpeg";
+import img_3236 from "../assets/gallery/IMG_3236.jpeg";
+import img_2280 from "../assets/gallery/IMG_2280.jpeg";
+import img_3943 from "../assets/gallery/IMG_3943.jpeg";
+import img_4172 from "../assets/gallery/IMG_4172.jpeg";
+import img_4183 from "../assets/gallery/IMG_4183.jpeg";
+import img_1288 from "../assets/gallery/IMG_1288.jpeg";
+import img_2797 from "../assets/gallery/IMG_2797.jpeg";
+import img_4068 from "../assets/gallery/IMG_4068.jpeg";
+import img_1155 from "../assets/gallery/IMG_1155.jpeg";
 
-const filters = ["All", "Fitted Kitchens", "Internal Fittings", "Bespoke Furniture", "Exteriors"];
+const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittings", "Exteriors"];
 
-const projects: { src: string; cat: string; alt: string; caption?: string }[] = [];
+const projects: { src: string; cat: string; alt: string; caption?: string }[] = [
+  { src: img_1401, cat: "Fitted Kitchens", alt: "Dark shaker kitchen with range cooker and Belfast sink" },
+  { src: img_0812, cat: "Fitted Kitchens", alt: "White shaker kitchen with oak worktop" },
+  { src: img_3116, cat: "Fitted Kitchens", alt: "Forest green shaker kitchen" },
+  { src: img_3962, cat: "Fitted Kitchens", alt: "Charcoal kitchen with marble island" },
+  { src: img_4059, cat: "Fitted Kitchens", alt: "Dark kitchen with marble splashback" },
+  { src: img_1628, cat: "Fitted Kitchens", alt: "White gloss kitchen with dark worktop" },
+  { src: img_3109, cat: "Fitted Kitchens", alt: "Handleless grey kitchen with island" },
+  { src: img_3932, cat: "Fitted Kitchens", alt: "Light grey shaker kitchen" },
+  { src: img_0769, cat: "Exteriors", alt: "Raised deck with glass balustrade" },
+  { src: img_0775, cat: "Exteriors", alt: "Garden decking with planter" },
+  { src: img_0778, cat: "Exteriors", alt: "Timber pergola" },
+  { src: img_3464, cat: "Exteriors", alt: "Composite deck with hot tub platform" },
+  { src: img_3236, cat: "Bespoke Furniture", alt: "Wall-to-wall wardrobe with TV recess" },
+  { src: img_2280, cat: "Bespoke Furniture", alt: "Loft bed with storage staircase" },
+  { src: img_3943, cat: "Bespoke Furniture", alt: "Navy fitted pantry cupboard" },
+  { src: img_4172, cat: "Bespoke Furniture", alt: "Fitted wardrobe with arched ceiling" },
+  { src: img_4183, cat: "Bespoke Furniture", alt: "Alcove shelving beside fireplace" },
+  { src: img_1288, cat: "Internal Fittings", alt: "Oak and glass staircase balustrade" },
+  { src: img_2797, cat: "Internal Fittings", alt: "Oak staircase with black metal balusters" },
+  { src: img_4068, cat: "Internal Fittings", alt: "Herringbone hallway flooring" },
+  { src: img_1155, cat: "Internal Fittings", alt: "Door frame and cornice detail" },
+];
 
 const Work = () => {
   const [active, setActive] = useState("All");
