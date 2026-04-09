@@ -26,27 +26,27 @@ import img_1155 from "../assets/gallery/IMG_1155.jpeg";
 const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittings", "Exteriors"];
 
 const projects: { src: string; cat: string; alt: string; caption?: string }[] = [
-  { src: img_1401, cat: "Fitted Kitchens", alt: "Dark shaker kitchen with range cooker and Belfast sink" },
-  { src: img_0812, cat: "Fitted Kitchens", alt: "White shaker kitchen with oak worktop" },
-  { src: img_3116, cat: "Fitted Kitchens", alt: "Forest green shaker kitchen" },
-  { src: img_3962, cat: "Fitted Kitchens", alt: "Charcoal kitchen with marble island" },
-  { src: img_4059, cat: "Fitted Kitchens", alt: "Dark kitchen with marble splashback" },
-  { src: img_1628, cat: "Fitted Kitchens", alt: "White gloss kitchen with dark worktop" },
-  { src: img_3109, cat: "Fitted Kitchens", alt: "Handleless grey kitchen with island" },
-  { src: img_3932, cat: "Fitted Kitchens", alt: "Light grey shaker kitchen" },
-  { src: img_0769, cat: "Exteriors", alt: "Raised deck with glass balustrade" },
-  { src: img_0775, cat: "Exteriors", alt: "Garden decking with planter" },
-  { src: img_0778, cat: "Exteriors", alt: "Timber pergola" },
-  { src: img_3464, cat: "Exteriors", alt: "Composite deck with hot tub platform" },
-  { src: img_3236, cat: "Bespoke Furniture", alt: "Wall-to-wall wardrobe with TV recess" },
-  { src: img_2280, cat: "Bespoke Furniture", alt: "Loft bed with storage staircase" },
-  { src: img_3943, cat: "Bespoke Furniture", alt: "Navy fitted pantry cupboard" },
-  { src: img_4172, cat: "Bespoke Furniture", alt: "Fitted wardrobe with arched ceiling" },
-  { src: img_4183, cat: "Bespoke Furniture", alt: "Alcove shelving beside fireplace" },
-  { src: img_1288, cat: "Internal Fittings", alt: "Oak and glass staircase balustrade" },
-  { src: img_2797, cat: "Internal Fittings", alt: "Oak staircase with black metal balusters" },
-  { src: img_4068, cat: "Internal Fittings", alt: "Herringbone hallway flooring" },
-  { src: img_1155, cat: "Internal Fittings", alt: "Door frame and cornice detail" },
+  { src: img_1401, cat: "Fitted Kitchens", alt: "Dark grey shaker kitchen with range cooker and Belfast sink", caption: "Dark shaker kitchen with range cooker and Belfast sink" },
+  { src: img_0812, cat: "Fitted Kitchens", alt: "White shaker kitchen with oak worktop and under-cabinet lighting", caption: "White shaker kitchen with oak worktop" },
+  { src: img_3116, cat: "Fitted Kitchens", alt: "Forest green shaker kitchen full run with double oven", caption: "Forest green kitchen full run" },
+  { src: img_3962, cat: "Fitted Kitchens", alt: "Charcoal shaker kitchen with marble island and Belfast sink", caption: "Charcoal kitchen with marble island" },
+  { src: img_4059, cat: "Fitted Kitchens", alt: "Dark kitchen full run with marble splashback and brass tap", caption: "Dark kitchen with marble splashback" },
+  { src: img_1628, cat: "Fitted Kitchens", alt: "White gloss kitchen with contrasting dark worktop and tiled splashback", caption: "White gloss kitchen with dark worktop" },
+  { src: img_3109, cat: "Fitted Kitchens", alt: "Handleless grey kitchen with oak breakfast bar island", caption: "Handleless grey kitchen with island" },
+  { src: img_3932, cat: "Fitted Kitchens", alt: "Light grey shaker kitchen with stone worktop", caption: "Light grey shaker kitchen" },
+  { src: img_0769, cat: "Exteriors", alt: "Raised timber deck with glass balustrade and steel posts", caption: "Raised deck with glass balustrade" },
+  { src: img_0775, cat: "Exteriors", alt: "Garden decking with integrated planter box detail", caption: "Garden decking with integrated planter" },
+  { src: img_0778, cat: "Exteriors", alt: "Timber pergola installed to rear of property", caption: "Timber pergola installation" },
+  { src: img_3464, cat: "Exteriors", alt: "Composite decking with hot tub platform and stepped levels", caption: "Composite deck with hot tub platform" },
+  { src: img_3236, cat: "Bespoke Furniture", alt: "Dark walnut wall-to-wall fitted wardrobe with integrated TV recess", caption: "Wall-to-wall wardrobe with TV recess" },
+  { src: img_2280, cat: "Bespoke Furniture", alt: "Bespoke loft bed with integrated storage staircase and desk", caption: "Loft bed with storage staircase" },
+  { src: img_3943, cat: "Bespoke Furniture", alt: "Navy fitted pantry cupboard with tongue-and-groove detail", caption: "Navy fitted pantry cupboard" },
+  { src: img_4172, cat: "Bespoke Furniture", alt: "Taupe fitted wardrobe adapted to arched ceiling profile", caption: "Fitted wardrobe with arched ceiling" },
+  { src: img_4183, cat: "Bespoke Furniture", alt: "Custom alcove shelving and cabinets either side of fireplace", caption: "Alcove shelving beside fireplace" },
+  { src: img_1288, cat: "Internal Fittings", alt: "Oak and glass staircase balustrade with hardwood flooring", caption: "Oak and glass staircase balustrade" },
+  { src: img_2797, cat: "Internal Fittings", alt: "Oak staircase with decorative black metal balusters", caption: "Oak staircase with black metal balusters" },
+  { src: img_4068, cat: "Internal Fittings", alt: "Herringbone hallway flooring installed through full run", caption: "Herringbone hallway flooring" },
+  { src: img_1155, cat: "Internal Fittings", alt: "Door frame and cornice detail with flush painted finish", caption: "Door frame and cornice detail" },
 ];
 
 const Work = () => {
@@ -68,7 +68,7 @@ const Work = () => {
     <>
       <section id="work" className="py-20 lg:py-28 bg-secondary/50">
         <div ref={ref} className="container mx-auto px-4">
-          <div className={`text-center max-w-2xl mx-auto mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="text-center max-w-2xl mx-auto mb-10 transition-all duration-700 opacity-100 translate-y-0">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Recent Work
             </h2>
@@ -78,7 +78,7 @@ const Work = () => {
           </div>
 
           {/* Filters */}
-          <div className={`flex flex-wrap justify-center gap-2 mb-10 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex flex-wrap justify-center gap-2 mb-10 transition-all duration-700 delay-100 opacity-100 translate-y-0">
             {filters.map((f) => (
               <button
                 key={f}
@@ -100,9 +100,7 @@ const Work = () => {
               <div
                 key={`${p.src}-${i}`}
                 onClick={() => openLightbox(i)}
-                className={`relative group rounded-lg overflow-hidden bg-card shadow-sm cursor-pointer transition-all duration-700 hover:shadow-lg ${
-                  visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className="relative group rounded-lg overflow-hidden bg-card shadow-sm cursor-pointer transition-all duration-700 hover:shadow-lg opacity-100 translate-y-0"
                 style={{ transitionDelay: visible ? `${200 + i * 80}ms` : "0ms" }}
               >
                 <img
