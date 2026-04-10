@@ -27,26 +27,26 @@ const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittin
 
 const projects: { src: string; cat: string; alt: string; caption?: string }[] = [
   { src: img_1401, cat: "Fitted Kitchens", alt: "Dark grey shaker kitchen with range cooker and Belfast sink", caption: "Dark shaker kitchen with range cooker and Belfast sink" },
-  { src: img_0812, cat: "Fitted Kitchens", alt: "White shaker kitchen with oak worktop and under-cabinet lighting", caption: "White shaker kitchen with oak worktop" },
-  { src: img_3116, cat: "Fitted Kitchens", alt: "Forest green shaker kitchen full run with double oven", caption: "Forest green kitchen full run" },
-  { src: img_3962, cat: "Fitted Kitchens", alt: "Charcoal shaker kitchen with marble island and Belfast sink", caption: "Charcoal kitchen with marble island" },
+  { src: img_0812, cat: "Bespoke Furniture", alt: "Fitted cupboards with floating oak shelves", caption: "Fitted cupboards with floating shelves" },
+  { src: img_3116, cat: "Bespoke Furniture", alt: "Built-in wardrobes with integrated TV unit", caption: "Built-in wardrobes with TV unit" },
+  { src: img_3962, cat: "Bespoke Furniture", alt: "Built-in cupboards with herringbone oak flooring", caption: "Built-in cupboards with herringbone flooring" },
   { src: img_4059, cat: "Fitted Kitchens", alt: "Dark kitchen full run with marble splashback and brass tap", caption: "Dark kitchen with marble splashback" },
   { src: img_1628, cat: "Fitted Kitchens", alt: "White gloss kitchen with contrasting dark worktop and tiled splashback", caption: "White gloss kitchen with dark worktop" },
-  { src: img_3109, cat: "Fitted Kitchens", alt: "Handleless grey kitchen with oak breakfast bar island", caption: "Handleless grey kitchen with island" },
+  { src: img_3109, cat: "Fitted Kitchens", alt: "Shaker kitchen with matching worktop and wall tiles", caption: "Shaker kitchen with matching worktop and tiles" },
   { src: img_3932, cat: "Fitted Kitchens", alt: "Light grey shaker kitchen with stone worktop", caption: "Light grey shaker kitchen" },
   { src: img_0769, cat: "Exteriors", alt: "Raised timber deck with glass balustrade and steel posts", caption: "Raised deck with glass balustrade" },
   { src: img_0775, cat: "Exteriors", alt: "Garden decking with integrated planter box detail", caption: "Garden decking with integrated planter" },
   { src: img_0778, cat: "Exteriors", alt: "Timber pergola installed to rear of property", caption: "Timber pergola installation" },
   { src: img_3464, cat: "Exteriors", alt: "Composite decking with hot tub platform and stepped levels", caption: "Composite deck with hot tub platform" },
-  { src: img_3236, cat: "Bespoke Furniture", alt: "Dark walnut wall-to-wall fitted wardrobe with integrated TV recess", caption: "Wall-to-wall wardrobe with TV recess" },
+  { src: img_3236, cat: "Fitted Kitchens", alt: "Green kitchen units with marble worktop and brass tap", caption: "Green kitchen with marble worktop" },
   { src: img_2280, cat: "Bespoke Furniture", alt: "Bespoke loft bed with integrated storage staircase and desk", caption: "Loft bed with storage staircase" },
-  { src: img_3943, cat: "Bespoke Furniture", alt: "Navy fitted pantry cupboard with tongue-and-groove detail", caption: "Navy fitted pantry cupboard" },
+  { src: img_3943, cat: "Internal Fittings", alt: "Bathroom refurbishment with tongue-and-groove panelling", caption: "Bathroom with tongue-and-groove panelling" },
   { src: img_4172, cat: "Bespoke Furniture", alt: "Taupe fitted wardrobe adapted to arched ceiling profile", caption: "Fitted wardrobe with arched ceiling" },
   { src: img_4183, cat: "Bespoke Furniture", alt: "Custom alcove shelving and cabinets either side of fireplace", caption: "Alcove shelving beside fireplace" },
   { src: img_1288, cat: "Internal Fittings", alt: "Oak and glass staircase balustrade with hardwood flooring", caption: "Oak and glass staircase balustrade" },
   { src: img_2797, cat: "Internal Fittings", alt: "Oak staircase with decorative black metal balusters", caption: "Oak staircase with black metal balusters" },
   { src: img_4068, cat: "Internal Fittings", alt: "Herringbone hallway flooring installed through full run", caption: "Herringbone hallway flooring" },
-  { src: img_1155, cat: "Internal Fittings", alt: "Door frame and cornice detail with flush painted finish", caption: "Door frame and cornice detail" },
+  { src: img_1155, cat: "Fitted Kitchens", alt: "Charcoal shaker kitchen units with granite worktop", caption: "Charcoal kitchen with granite worktop" },
 ];
 
 const Work = () => {

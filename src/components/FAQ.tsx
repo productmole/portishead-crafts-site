@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Are you qualified?",
-    a: "Yes — Andy holds a City & Guilds qualification in carpentry and joinery, and has over 15 years of experience working on residential and commercial projects across North Somerset.",
+    a: "Yes — Andy holds a City & Guilds qualification in carpentry and joinery, and has over 15 years of experience working on homes across North Somerset.",
   },
   {
     q: "How long will my job take?",

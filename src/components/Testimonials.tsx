@@ -3,7 +3,32 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // ── Testimonial data — edit this array to add / remove reviews ──
-const testimonials: { review: string; name: string; date: string }[] = [];
+const testimonials: { review: string; name: string; date: string }[] = [
+  {
+    review:
+      "Andy just completed a kitchen refit for us. This included removing an old kitchen and fitting a new one in a different room, relaying all our flooring, building a cabinet to house our boiler and putting in shelves in an under stairs cupboard to turn it into a pantry. He was brilliant throughout, easy to talk to and quick in his response. He coordinated all plumbing and electrical work which made the whole project so much easier. The final product was finished to a real high standard and we are so happy with everything he did for us. Great value for money and super professional. I would highly recommend his services!",
+    name: "Kate Webster",
+    date: "",
+  },
+  {
+    review:
+      "Andy fitted new unit doors and drawers to our kitchen. He took the utmost care and we are really pleased with the result. He was polite, considerate and the price more than reasonable. Would recommend and will certainly engage him again if we need further work.",
+    name: "Norma & Ian",
+    date: "",
+  },
+  {
+    review:
+      "We've worked with Andy for over 7 years now. He's done jobs from hanging doors to laying multiple rooms with wooden floor to building our loft conversion. Andy is an absolute pleasure to work with, he's got an outstanding eye for detail and always delivers top quality work.",
+    name: "Julia Adams",
+    date: "",
+  },
+  {
+    review:
+      "Andy did a fantastic job on my son's built-in wardrobe. Great from start to finish — design, build and finish. Really good value too. Highly recommended.",
+    name: "Gary Walder",
+    date: "",
+  },
+];
 
 const Testimonials = () => {
   const { ref, visible } = useScrollReveal();
@@ -120,7 +145,7 @@ const TestimonialCard = ({
     </p>
     <div>
       <p className="font-body font-semibold text-foreground text-sm">{name}</p>
-      <p className="font-body text-muted-foreground text-xs mt-0.5">{date}</p>
+      {date && <p className="font-body text-muted-foreground text-xs mt-0.5">{date}</p>}
     </div>
   </div>
 );

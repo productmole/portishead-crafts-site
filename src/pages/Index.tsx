@@ -17,8 +17,8 @@ const Index = () => (
       <TrustBar />
       <Services />
       <Work />
-      <FAQ />
       <Testimonials />
+      <FAQ />
       <About />
       <Contact />
     </main>

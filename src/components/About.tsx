@@ -5,7 +5,7 @@ const trustItems = [
   "15 Years Established",
   "City & Guilds Qualified",
   "Based in Portishead, North Somerset",
-  "Residential & Commercial Projects",
+  "Projects Large & Small",
   "Trusted Tradespeople Network (plasterers, plumbers, electricians)",
   "Free Quotes — No Obligation",
 ];
@@ -23,7 +23,7 @@ const About = () => {
               Andy Richmond — Carpenter, Portishead
             </h2>
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              Richmond Carpentry is a City &amp; Guilds qualified carpentry business based in Portishead, with 15 years of experience serving homeowners and businesses throughout North Somerset and beyond.
+              Richmond Carpentry is a City &amp; Guilds qualified carpentry business based in Portishead, with 15 years of experience serving homeowners throughout North Somerset and beyond.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed mb-8">
               Every job — from a single door to a full kitchen — gets the same attention to detail and the same trusted team. Get in touch for a free, no-obligation quote.

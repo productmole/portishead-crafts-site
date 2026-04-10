@@ -1,9 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import cityGuildsLogo from "@/assets/city-and-guilds-logo.png";
 
 const items = [
-  { icon: "🏅", text: "City & Guilds Qualified" },
-  { icon: "📍", text: "Based in Portishead" },
-  { icon: "⭐", text: "Free Quotes Always Provided" },
+  { icon: null, logo: cityGuildsLogo, text: "City & Guilds Qualified" },
+  { icon: "📍", logo: null, text: "Based in Portishead" },
+  { icon: "⭐", logo: null, text: "Free Quotes Always Provided" },
 ];
 
 const TrustBar = () => {
@@ -18,7 +19,11 @@ const TrustBar = () => {
             className={`flex items-center gap-2 text-foreground transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             style={{ transitionDelay: visible ? `${i * 150}ms` : "0ms" }}
           >
-            <span className="text-2xl" role="img" aria-hidden="true">{item.icon}</span>
+            {item.logo ? (
+              <img src={item.logo} alt="City & Guilds" className="h-7 w-auto" />
+            ) : (
+              <span className="text-2xl" role="img" aria-hidden="true">{item.icon}</span>
+            )}
             <span className="text-sm font-medium font-body">{item.text}</span>
           </div>
         ))}

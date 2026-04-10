@@ -45,7 +45,7 @@ const Services = () => {
             What We Do
           </h2>
           <p className="text-muted-foreground font-body">
-            We provide free quotes for jobs of all sizes — from small one-off home improvements to larger ongoing commercial projects.
+            We provide free quotes for jobs of all sizes — from a single door hang to a full kitchen fit.
           </p>
         </div>
 
