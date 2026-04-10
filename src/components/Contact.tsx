@@ -2,7 +2,7 @@ import { useState, type FormEvent } from "react";
 import { Phone, Mail, Send, Loader2 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const FORMSPREE_URL = "https://formspree.io/f/mjgpgbbk";
+const FORMSPREE_URL = "https://formspree.io/f/mbdpvnod";
 
 const Contact = () => {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
