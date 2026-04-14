@@ -93,7 +93,7 @@ const INITIAL_COUNT = 3;
 const projects: { src: string; cat: string; alt: string }[] = [
   { src: img_3966, cat: "Fitted Kitchens", alt: "Dark navy shaker kitchen with Belfast sink, LED splashback and herringbone floor" },
   { src: img_0769, cat: "Exteriors", alt: "Raised timber deck with glass balustrade and steel posts" },
-  { src: img_1404, cat: "Bespoke Furniture", alt: "Dark grey shaker pantry cabinet with cup handles next to navy blue kitchen units" },
+  { src: img_1404, cat: "Fitted Kitchens", alt: "Dark grey shaker pantry cabinet with cup handles next to navy blue kitchen units" },
   { src: img_3970, cat: "Fitted Kitchens", alt: "Dark navy kitchen with white quartz island and LED glass splashback" },
   { src: img_new_openplan, cat: "Fitted Kitchens", alt: "Open-plan grey gloss kitchen with island, pendant lights and oak flooring" },
   { src: img_1621, cat: "Bespoke Furniture", alt: "Under-stair storage cupboard fitted to sloping profile" },
