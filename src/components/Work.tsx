@@ -68,22 +68,22 @@ import img_new_openplan from "../assets/gallery/Image 2026-04-13 at 18.59.33.jpe
 import img_new_oventower from "../assets/gallery/Image 2026-04-13 at 18.59.33 (1).jpeg";
 import img_new_shutters from "../assets/gallery/Image 2026-04-13 at 19.40.03.jpeg";
 import img_new_wardrobe from "../assets/gallery/Image 2026-04-13 at 18.52.16.jpeg";
-import deckingDetail1 from "../assets/gallery/decking-detail-1.png";
-import deckingSteps from "../assets/gallery/decking-steps.png";
-import hotTubSurround from "../assets/gallery/hot-tub-surround.png";
-import balconyCorner from "../assets/gallery/balcony-glass-balustrade-corner.png";
-import balconyLength from "../assets/gallery/balcony-decking-length.png";
-import balconyStepDetail from "../assets/gallery/balcony-decking-step-detail.png";
-import balconyWide from "../assets/gallery/balcony-glass-balustrade-wide.png";
-import oakLedgedDoor from "../assets/gallery/oak-ledged-door.png";
-import oakPanelDoor from "../assets/gallery/oak-panel-door.png";
-import oakArchitrave from "../assets/gallery/oak-architrave-detail.png";
-import shakerKitchenWide from "../assets/gallery/shaker-kitchen-wide.png";
-import shakerKitchenAppliances from "../assets/gallery/shaker-kitchen-appliances.png";
-import greyLarder from "../assets/gallery/grey-shaker-larder.png";
-import oakFloatingShelves from "../assets/gallery/oak-floating-shelves.png";
-import fittedWardrobeClosed from "../assets/gallery/fitted-wardrobe-closed.png";
-import fittedWardrobeInterior from "../assets/gallery/fitted-wardrobe-interior.png";
+import deckingDetail1 from "../assets/gallery/decking-detail-1.jpeg";
+import deckingSteps from "../assets/gallery/decking-steps.jpeg";
+import hotTubSurround from "../assets/gallery/hot-tub-surround.jpeg";
+import balconyCorner from "../assets/gallery/balcony-glass-balustrade-corner.jpeg";
+import balconyLength from "../assets/gallery/balcony-decking-length.jpeg";
+import balconyStepDetail from "../assets/gallery/balcony-decking-step-detail.jpeg";
+import balconyWide from "../assets/gallery/balcony-glass-balustrade-wide.jpeg";
+import oakLedgedDoor from "../assets/gallery/oak-ledged-door.jpeg";
+import oakPanelDoor from "../assets/gallery/oak-panel-door.jpeg";
+import oakArchitrave from "../assets/gallery/oak-architrave-detail.jpeg";
+import shakerKitchenWide from "../assets/gallery/shaker-kitchen-wide.jpeg";
+import shakerKitchenAppliances from "../assets/gallery/shaker-kitchen-appliances.jpeg";
+import greyLarder from "../assets/gallery/grey-shaker-larder.jpeg";
+import oakFloatingShelves from "../assets/gallery/oak-floating-shelves.jpeg";
+import fittedWardrobeClosed from "../assets/gallery/fitted-wardrobe-closed.jpeg";
+import fittedWardrobeInterior from "../assets/gallery/fitted-wardrobe-interior.jpeg";
 
 const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittings", "Exteriors"];
 
