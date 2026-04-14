@@ -81,7 +81,6 @@ import oakArchitrave from "../assets/gallery/oak-architrave-detail.png";
 import shakerKitchenWide from "../assets/gallery/shaker-kitchen-wide.png";
 import shakerKitchenAppliances from "../assets/gallery/shaker-kitchen-appliances.png";
 import greyLarder from "../assets/gallery/grey-shaker-larder.png";
-import navyCoffeeStation from "../assets/gallery/navy-coffee-station.png";
 import oakFloatingShelves from "../assets/gallery/oak-floating-shelves.png";
 import fittedWardrobeClosed from "../assets/gallery/fitted-wardrobe-closed.png";
 import fittedWardrobeInterior from "../assets/gallery/fitted-wardrobe-interior.png";
@@ -151,7 +150,7 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: img_1669, cat: "Fitted Kitchens", alt: "Handleless kitchen with oak breakfast bar island and integrated appliances" },
   { src: img_2691, cat: "Bespoke Furniture", alt: "Bespoke cloakroom fitted vanity and tongue-and-groove panelling" },
   { src: img_1150, cat: "Fitted Kitchens", alt: "Grey shaker kitchen with curved island and quartz worktop" },
-  { src: img_3968, cat: "Bespoke Furniture", alt: "Dark navy shaker coffee bar fitted under sloping ceiling with white quartz worktop" },
+  { src: img_3968, cat: "Fitted Kitchens", alt: "Dark navy shaker coffee bar fitted under sloping ceiling with white quartz worktop" },
   { src: img_1152, cat: "Fitted Kitchens", alt: "Grey shaker kitchen with double oven tower and quartz worktop" },
   { src: img_new_wardrobe, cat: "Bespoke Furniture", alt: "Four-door shaker wardrobe with brass knobs fitted wall-to-wall" },
   { src: img_1155, cat: "Fitted Kitchens", alt: "Charcoal shaker kitchen units with granite worktop" },
@@ -172,7 +171,6 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: shakerKitchenWide, cat: "Fitted Kitchens", alt: "Fitted shaker kitchen with oak worktop and under-cabinet lighting" },
   { src: shakerKitchenAppliances, cat: "Fitted Kitchens", alt: "Shaker kitchen with integrated appliances and oak worktop" },
   { src: greyLarder, cat: "Fitted Kitchens", alt: "Grey shaker-style larder unit with drawers and chrome handles" },
-  { src: navyCoffeeStation, cat: "Fitted Kitchens", alt: "Bespoke navy under-stairs coffee station with quartz worktop" },
   { src: oakFloatingShelves, cat: "Bespoke Furniture", alt: "Bespoke oak floating corner shelves" },
   { src: fittedWardrobeClosed, cat: "Bespoke Furniture", alt: "Built-in fitted wardrobes with shaker-style doors" },
   { src: fittedWardrobeInterior, cat: "Bespoke Furniture", alt: "Fitted wardrobe interior with shelving and hanging space" },
