@@ -7,7 +7,6 @@ import img_0775 from "../assets/gallery/IMG_0775.jpeg";
 import img_0778 from "../assets/gallery/IMG_0778.jpeg";
 import img_0782 from "../assets/gallery/IMG_0782.jpeg";
 import img_0804 from "../assets/gallery/IMG_0804.jpeg";
-import img_0812 from "../assets/gallery/IMG_0812.jpeg";
 import img_0816 from "../assets/gallery/IMG_0816.jpeg";
 import img_1150 from "../assets/gallery/IMG_1150.jpeg";
 import img_1152 from "../assets/gallery/IMG_1152.jpeg";
@@ -53,7 +52,6 @@ import img_3330 from "../assets/gallery/IMG_3330.jpeg";
 import img_3464 from "../assets/gallery/IMG_3464.jpeg";
 import img_3932 from "../assets/gallery/IMG_3932.jpeg";
 import img_3933 from "../assets/gallery/IMG_3933.jpeg";
-import img_3962 from "../assets/gallery/IMG_3962.jpeg";
 import img_3966 from "../assets/gallery/IMG_3966.jpeg";
 import img_3968 from "../assets/gallery/IMG_3968.jpeg";
 import img_3970 from "../assets/gallery/IMG_3970.jpeg";
@@ -70,13 +68,29 @@ import img_new_openplan from "../assets/gallery/Image 2026-04-13 at 18.59.33.jpe
 import img_new_oventower from "../assets/gallery/Image 2026-04-13 at 18.59.33 (1).jpeg";
 import img_new_shutters from "../assets/gallery/Image 2026-04-13 at 19.40.03.jpeg";
 import img_new_wardrobe from "../assets/gallery/Image 2026-04-13 at 18.52.16.jpeg";
+import deckingDetail1 from "../assets/gallery/decking-detail-1.png";
+import deckingSteps from "../assets/gallery/decking-steps.png";
+import hotTubSurround from "../assets/gallery/hot-tub-surround.png";
+import balconyCorner from "../assets/gallery/balcony-glass-balustrade-corner.png";
+import balconyLength from "../assets/gallery/balcony-decking-length.png";
+import balconyStepDetail from "../assets/gallery/balcony-decking-step-detail.png";
+import balconyWide from "../assets/gallery/balcony-glass-balustrade-wide.png";
+import oakLedgedDoor from "../assets/gallery/oak-ledged-door.png";
+import oakPanelDoor from "../assets/gallery/oak-panel-door.png";
+import oakArchitrave from "../assets/gallery/oak-architrave-detail.png";
+import shakerKitchenWide from "../assets/gallery/shaker-kitchen-wide.png";
+import shakerKitchenAppliances from "../assets/gallery/shaker-kitchen-appliances.png";
+import greyLarder from "../assets/gallery/grey-shaker-larder.png";
+import navyCoffeeStation from "../assets/gallery/navy-coffee-station.png";
+import oakFloatingShelves from "../assets/gallery/oak-floating-shelves.png";
+import fittedWardrobeClosed from "../assets/gallery/fitted-wardrobe-closed.png";
+import fittedWardrobeInterior from "../assets/gallery/fitted-wardrobe-interior.png";
 
 const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittings", "Exteriors"];
 
 const INITIAL_COUNT = 3;
 
 const projects: { src: string; cat: string; alt: string }[] = [
-  // ── "All" hero row + each category's best interleaved ──
   { src: img_3966, cat: "Fitted Kitchens", alt: "Dark navy shaker kitchen with Belfast sink, LED splashback and herringbone floor" },
   { src: img_0769, cat: "Exteriors", alt: "Raised timber deck with glass balustrade and steel posts" },
   { src: img_1404, cat: "Bespoke Furniture", alt: "Dark grey shaker pantry cabinet with cup handles next to navy blue kitchen units" },
@@ -94,16 +108,13 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: img_0775, cat: "Exteriors", alt: "Garden decking with integrated planter box detail" },
   { src: img_4068, cat: "Internal Fittings", alt: "Herringbone hallway flooring installed through full run" },
 
-  // ── Remaining images — categories interleaved ──
   { src: img_3107, cat: "Fitted Kitchens", alt: "Grey shaker kitchen with dark marble splashback, integrated oven and LED plinth lighting" },
-  { src: img_0812, cat: "Bespoke Furniture", alt: "Fitted cupboards with floating oak shelves" },
   { src: img_2797, cat: "Internal Fittings", alt: "Oak staircase with decorative black metal balusters" },
   { src: img_0804, cat: "Exteriors", alt: "Raised timber deck with glass balustrade" },
   { src: img_4059, cat: "Fitted Kitchens", alt: "Dark kitchen full run with marble splashback and brass tap" },
   { src: img_3116, cat: "Bespoke Furniture", alt: "Built-in wardrobes with integrated TV unit" },
   { src: img_2813, cat: "Internal Fittings", alt: "Oak staircase with glass balustrade panels and open risers" },
   { src: img_3464, cat: "Exteriors", alt: "Composite decking with hot tub platform and stepped levels" },
-  { src: img_3962, cat: "Bespoke Furniture", alt: "Built-in cupboards with herringbone oak flooring" },
   { src: img_2054, cat: "Internal Fittings", alt: "Painted spindle balustrade with oak handrail at loft landing" },
   { src: img_3235, cat: "Fitted Kitchens", alt: "Green shaker kitchen with marble worktop and white metro tiles" },
   { src: img_4183, cat: "Bespoke Furniture", alt: "Custom alcove shelving and cabinets either side of fireplace" },
@@ -147,6 +158,24 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: img_1401, cat: "Fitted Kitchens", alt: "Dark grey shaker kitchen with range cooker and Belfast sink" },
   { src: img_new_kitchen_oak, cat: "Fitted Kitchens", alt: "Shaker kitchen with butcher-block oak worktop and patterned tile splashback" },
   { src: img_new_oventower, cat: "Fitted Kitchens", alt: "White gloss oven tower with LED display shelving and double built-in ovens" },
+
+  { src: deckingDetail1, cat: "Exteriors", alt: "Composite decking with chevron pattern detail" },
+  { src: deckingSteps, cat: "Exteriors", alt: "Tiered composite decking steps with hot tub surround" },
+  { src: hotTubSurround, cat: "Exteriors", alt: "Composite decking with built-in hot tub recess" },
+  { src: balconyCorner, cat: "Exteriors", alt: "Composite balcony decking with frameless glass balustrade" },
+  { src: balconyLength, cat: "Exteriors", alt: "Raised composite decking balcony with glass panels" },
+  { src: balconyStepDetail, cat: "Exteriors", alt: "Balcony decking with step-down detail and glass surround" },
+  { src: balconyWide, cat: "Exteriors", alt: "Wide-angle view of composite balcony with glass balustrade" },
+  { src: oakLedgedDoor, cat: "Internal Fittings", alt: "Handmade oak ledged door with wrought-iron strap hinges" },
+  { src: oakPanelDoor, cat: "Internal Fittings", alt: "Solid oak panel door with matching oak frame" },
+  { src: oakArchitrave, cat: "Internal Fittings", alt: "Oak architrave mitre joint detail" },
+  { src: shakerKitchenWide, cat: "Fitted Kitchens", alt: "Fitted shaker kitchen with oak worktop and under-cabinet lighting" },
+  { src: shakerKitchenAppliances, cat: "Fitted Kitchens", alt: "Shaker kitchen with integrated appliances and oak worktop" },
+  { src: greyLarder, cat: "Fitted Kitchens", alt: "Grey shaker-style larder unit with drawers and chrome handles" },
+  { src: navyCoffeeStation, cat: "Fitted Kitchens", alt: "Bespoke navy under-stairs coffee station with quartz worktop" },
+  { src: oakFloatingShelves, cat: "Bespoke Furniture", alt: "Bespoke oak floating corner shelves" },
+  { src: fittedWardrobeClosed, cat: "Bespoke Furniture", alt: "Built-in fitted wardrobes with shaker-style doors" },
+  { src: fittedWardrobeInterior, cat: "Bespoke Furniture", alt: "Fitted wardrobe interior with shelving and hanging space" },
 ];
 
 const Work = () => {
