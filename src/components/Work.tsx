@@ -65,7 +65,6 @@ import img_4138 from "../assets/gallery/IMG_4138.jpeg";
 import img_4170 from "../assets/gallery/IMG_4170.jpeg";
 import img_4172 from "../assets/gallery/IMG_4172.jpeg";
 import img_4183 from "../assets/gallery/IMG_4183.jpeg";
-import img_5096 from "../assets/gallery/IMG_5096.jpeg";
 import img_new_kitchen_oak from "../assets/gallery/Image 2026-04-13 at 18.59.32.jpeg";
 import img_new_openplan from "../assets/gallery/Image 2026-04-13 at 18.59.33.jpeg";
 import img_new_oventower from "../assets/gallery/Image 2026-04-13 at 18.59.33 (1).jpeg";
@@ -79,9 +78,9 @@ const INITIAL_COUNT = 3;
 const projects: { src: string; cat: string; alt: string }[] = [
   // ── "All" hero row + each category's best interleaved ──
   { src: img_3966, cat: "Fitted Kitchens", alt: "Dark navy shaker kitchen with Belfast sink, LED splashback and herringbone floor" },
-  { src: img_3970, cat: "Fitted Kitchens", alt: "Dark navy kitchen with white quartz island and LED glass splashback" },
   { src: img_0769, cat: "Exteriors", alt: "Raised timber deck with glass balustrade and steel posts" },
   { src: img_1404, cat: "Bespoke Furniture", alt: "Dark grey shaker pantry cabinet with cup handles next to navy blue kitchen units" },
+  { src: img_3970, cat: "Fitted Kitchens", alt: "Dark navy kitchen with white quartz island and LED glass splashback" },
   { src: img_new_openplan, cat: "Fitted Kitchens", alt: "Open-plan grey gloss kitchen with island, pendant lights and oak flooring" },
   { src: img_1621, cat: "Bespoke Furniture", alt: "Under-stair storage cupboard fitted to sloping profile" },
   { src: img_2815, cat: "Internal Fittings", alt: "Oak and glass staircase balustrade viewed from landing" },
@@ -104,7 +103,6 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: img_3116, cat: "Bespoke Furniture", alt: "Built-in wardrobes with integrated TV unit" },
   { src: img_2813, cat: "Internal Fittings", alt: "Oak staircase with glass balustrade panels and open risers" },
   { src: img_3464, cat: "Exteriors", alt: "Composite decking with hot tub platform and stepped levels" },
-  { src: img_5096, cat: "Fitted Kitchens", alt: "Dark shaker kitchen with white marble worktop, brass handles and matching splashback" },
   { src: img_3962, cat: "Bespoke Furniture", alt: "Built-in cupboards with herringbone oak flooring" },
   { src: img_2054, cat: "Internal Fittings", alt: "Painted spindle balustrade with oak handrail at loft landing" },
   { src: img_3235, cat: "Fitted Kitchens", alt: "Green shaker kitchen with marble worktop and white metro tiles" },
