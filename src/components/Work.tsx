@@ -84,6 +84,14 @@ import greyLarder from "../assets/gallery/grey-shaker-larder.jpeg";
 import oakFloatingShelves from "../assets/gallery/oak-floating-shelves.jpeg";
 import fittedWardrobeClosed from "../assets/gallery/fitted-wardrobe-closed.jpeg";
 import fittedWardrobeInterior from "../assets/gallery/fitted-wardrobe-interior.jpeg";
+import greigeShakerOvenTower from "../assets/gallery/greige-shaker-kitchen-oven-tower.jpeg";
+import greigeShakerDinerBarnDoor from "../assets/gallery/greige-shaker-kitchen-diner-barn-door.jpeg";
+import greigeShakerWindow from "../assets/gallery/greige-shaker-kitchen-window.jpeg";
+import greyHandlelessOvens from "../assets/gallery/grey-handleless-kitchen-ovens.jpeg";
+import greyHandlelessIslandStools from "../assets/gallery/grey-handleless-kitchen-island-stools.jpeg";
+import greyHandlelessIslandDoor from "../assets/gallery/grey-handleless-kitchen-island-door.jpeg";
+import greyHandlelessWide from "../assets/gallery/grey-handleless-kitchen-wide.jpeg";
+import greyHandlelessLarderIsland from "../assets/gallery/grey-handleless-kitchen-larder-island.jpeg";
 
 const filters = ["All", "Fitted Kitchens", "Bespoke Furniture", "Internal Fittings", "Exteriors"];
 
@@ -174,6 +182,15 @@ const projects: { src: string; cat: string; alt: string }[] = [
   { src: oakFloatingShelves, cat: "Bespoke Furniture", alt: "Bespoke oak floating corner shelves" },
   { src: fittedWardrobeClosed, cat: "Bespoke Furniture", alt: "Built-in fitted wardrobes with shaker-style doors" },
   { src: fittedWardrobeInterior, cat: "Bespoke Furniture", alt: "Fitted wardrobe interior with shelving and hanging space" },
+
+  { src: greigeShakerOvenTower, cat: "Fitted Kitchens", alt: "Greige shaker kitchen with built-in double oven, gas hob and herringbone flooring" },
+  { src: greigeShakerDinerBarnDoor, cat: "Fitted Kitchens", alt: "Kitchen diner with white barn-style sliding door and greige shaker larder units" },
+  { src: greigeShakerWindow, cat: "Fitted Kitchens", alt: "Greige shaker kitchen with window over sink, gas hob and quartz worktop" },
+  { src: greyHandlelessOvens, cat: "Fitted Kitchens", alt: "Grey handleless kitchen with black double ovens and integrated tall units" },
+  { src: greyHandlelessIslandStools, cat: "Fitted Kitchens", alt: "Grey handleless kitchen with quartz island, bar stools and angled black extractor" },
+  { src: greyHandlelessIslandDoor, cat: "Fitted Kitchens", alt: "Grey handleless kitchen with white quartz breakfast island and panelled door" },
+  { src: greyHandlelessWide, cat: "Fitted Kitchens", alt: "Grey handleless kitchen with black double ovens, induction hob and angled extractor" },
+  { src: greyHandlelessLarderIsland, cat: "Fitted Kitchens", alt: "Grey handleless kitchen with tall larder units and white quartz breakfast island" },
 ];
 
 const Work = () => {

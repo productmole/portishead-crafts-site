@@ -6,6 +6,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials: { review: string; name: string; date: string }[] = [
   {
     review:
+      "Andy has just fitted a kitchen for us which involved taking out the old kitchen, fitting the new one, laying new flooring, replacing the skirting and fitting a barn style sliding door. Our house is slightly curved so we wanted to make sure that we used someone experienced who could deal with the strange angles. Andy's attention to detail was great and we are incredibly pleased with the end result. Andy's communication throughout was good and he liaised with the kitchen supplier and brought in all the relevant trades people when required, all of which took the stress out of the process for us. We were equally impressed with the tradesmen he brought in too, all of whom were polite, arrived on time and did a great job. The price was competitive and I would recommend.",
+    name: "Emma Noel",
+    date: "",
+  },
+  {
+    review:
       "Andy just completed a kitchen refit for us. This included removing an old kitchen and fitting a new one in a different room, relaying all our flooring, building a cabinet to house our boiler and putting in shelves in an under stairs cupboard to turn it into a pantry. He was brilliant throughout, easy to talk to and quick in his response. He coordinated all plumbing and electrical work which made the whole project so much easier. The final product was finished to a real high standard and we are so happy with everything he did for us. Great value for money and super professional. I would highly recommend his services!",
     name: "Kate Webster",
     date: "",
